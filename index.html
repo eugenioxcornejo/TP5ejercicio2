@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="determina generacion">
+    <meta name="autor" content="Eugenio Cruz Cornejo" />
+    <meta name="Keywords" content="DNI,Persona,generacion" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="d-flex justify-content-center">Generation Finder</h1>
+    <section class="d-flex flex-column ms-3 col-2 mt-5">
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm ">nombre</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="nombre">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">edad</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="edad">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">DNI</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="dni">
+          </div>
+
+<!-- SEXO falta -->
+<div class="input-group mb-3">
+    <label class="input-group-text" for="sexo">sexo</label>
+    <select class="form-select" id="sexo">
+      <option selected id="sexo">seleccione</option>
+      <option value="1" id="sexo">H</option>
+      <option value="2"id="sexo" >M</option>
+      <option value="3"id="sexo" >X</option>
+    </select>
+  </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm ">peso</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="peso">
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm">altura</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="altura">
+          </div>
+          <div class="input-group ">
+            <span class="input-group-text">Fecha de nacimiento DD/MM/AAAA</span>
+            <div class="d-flex flex-row justify-content-center">
+            <input type="text" aria-label="dia" class="form-control " id="dia">
+            <input type="text" aria-label="mes" class="form-control " id="mes"></div>
+            <input type="integer" aria-label="año" class="form-control " id="ano"></div>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              soy mayor de edad
+            </label>
+          </div>
+
+          <button type="button" class="btn btn-primary " onclick="boton()">MOSTRAR GENERACION</button>
+    </section >
+    
+   
+    
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="./js/TP5ejercicio2.js"></script>
+</html>
