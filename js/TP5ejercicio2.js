@@ -65,11 +65,6 @@ esMayorDeEdad (){
 mostrarDatos () {
     document.write(`Nombre:${this.nombre},edad:${this.edad}, DNI:${this.dni}, sexo:, peso: ${this.peso}, altura:${this.altura}, Fecha de nacimiento ${this.fecha_nacimientodia}/${this.fecha_nacimientomes}/${this.fecha_nacimientoano} `)
 }
-//obtenersexo (){
- //   seleccion = document.getElementById('sexo');
- //   let output = seleccion.value;
-  //  document.querySelector('.output').textContent = output;
-//}
 
 }
 const boton =() =>{ 
@@ -84,6 +79,7 @@ const personaingresada = new Persona (
     document.getElementById('mes').value,
     document.getElementById('ano').value,
 )
+
 personaingresada.mostrarGeneracion();
 personaingresada.mostrarDatos();
 personaingresada.esMayorDeEdad();}
